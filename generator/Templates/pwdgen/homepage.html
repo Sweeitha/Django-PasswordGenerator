@@ -1,0 +1,28 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<div class="container text-center">
+  <h2 class="alert alert-dark">Password Generator</h2>
+  <form action="password">
+  <p class="alert alert-primary">
+    <select name="Length of the password">
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12" selected>12</option>
+    </select>Length
+    <br>
+    <input type="checkbox" name="Uppercase">Uppercase</<input>
+    <br>
+    <input type="checkbox" name="Numbers">Numbers</<input>
+    <br>
+    <input type="checkbox" name="Special Character">Special Character</<input>
+    <br>
+    </p>
+    <input type="submit" value="Generate Password" class="btn btn-info">
+  </form>
+  <br>
+  <a href="{% url 'aboutme' %}">Click here to know me</a>
+  <!--Navigates to admin page as we mentioned the name of url as aboutme in urls.py-->
+</div>
